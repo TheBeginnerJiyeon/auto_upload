@@ -1,2 +1,3 @@
 import turtle
 
+print("hello")
