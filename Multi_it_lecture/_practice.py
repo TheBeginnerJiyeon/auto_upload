@@ -1,5 +1,8 @@
-def greet(**details):
-    for key, value in details.items():
-        print(f"{key}: {value}")
+sentence = "Python is an amazing language"
 
-greet(name="Alice", age=30, city="New York")
+# Finding the index of substring "amazing"
+index = sentence.find("amazing")
+print("Index of 'amazing':", index)  # Output: 13
+
+print(sentence[index:index+7])
+
