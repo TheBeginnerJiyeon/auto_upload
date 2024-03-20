@@ -31,6 +31,20 @@ print(odd4)
 가게=['올리브영','세븐일레븐','엘지25']
 제품=['폰 충전기','물티슈','콜라']
 
-살거=[(x,y) for x in 가게 for y in 제품]
+살거=[(x,y) for x in 가게 if x=="올리브영" for y in 제품 if y=="콜라"]
 print(살거)
+
+
+# lambda 람다 // 
+# 람다식: 매개변수와 매개변수가 들어간 식(함수) 한 줄 표현
+# 매번 변수를 다르게 정의하기 귀찮아서 
+
+a=lambda x,y: x+y
+print(a(1,2)) 
+
+print((lambda x,y: 2**x +3)(2,3))
+
+print(lambda x,y: x+y) # <function <lambda> at 0x00000237C15B08B0> 함수다
+
+
 
