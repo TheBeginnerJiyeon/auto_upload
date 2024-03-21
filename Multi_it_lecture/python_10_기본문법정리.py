@@ -369,3 +369,101 @@ for i,v in enumerate(korean_soccer_players):
 
 for i,v in enumerate(thai_soccer_players):
     print(f"태국 대표팀 {soccer_positions[i]}는 {v}입니다.")
+
+team_korea=['조현우','김영권','김영재','백승호']
+for i,player in enumerate(team_korea):
+    print(f"국가대표팀 {i+1}번째 선수는 {player}입니다.")
+
+num_lists=[10,20,30]
+
+for i, num in enumerate(num_lists):
+    print(i+1,num)
+
+# 실생활 응용
+# 단가
+prices=[1.2,3.4,2.5]
+
+# 판매량
+total_sales=[100,80,90]
+
+for sales, price in zip(total_sales, prices):
+    revenue=sales*price
+    print(f"매출액: {revenue}")
+# zip은 원소 갯수가 작은 것 까지 진행된다
+
+# zip함수 : 두 개 이상의 반복(iterable)가능한 객체(list, tuple, string)을 병렬로 묶는 함수
+# 각각 반복 가능 객체 같은 인덱스 요소 묶어서 튜플로 만듦
+
+names=["양진욱","김민재","김지우","박소현","김선규","성수린"]
+ages=[x for x in range(20,27)]
+heights=[x for x in range(177,184)]
+
+for name, age, height in zip(names,ages,heights):
+    print(f"{name}의 나이는 {age}살이고 키는 {height}cm 입니다.")
+
+# While
+    
+for i in range(3):
+    print(i)
+
+# for문 차이
+    
+while True: # break 필요!!
+    print("무한반복 지옥 안 돼")
+    break
+
+i=1
+while i<=10: # 정지조건
+    print(f"{i}번째 사과")
+    i+=1
+
+# 사용자 정의 함수
+    
+def func1(para1,para2):
+    price("function execution!")
+    return 0
+
+def add(num1, num2):
+    result=num1+num2
+    return result
+
+print(add(20,40))
+
+a=20
+b=30
+temp=add(a,b)
+print(temp)
+
+def fum2(a,v):
+    return  # None 아무 것도 반환하지 않는다
+
+print(fum2(1,2))  # None
+
+def addition(num1,num2):
+    result=num1+num2
+    print(result)
+
+a=20
+b=40
+
+print(addition(a,b))
+
+def 더하기(num1,num2,num3=3,num4=0):
+    result=num1+num2+num3+num4
+    return result
+
+print(더하기(1,2))
+
+while True:
+    int(input("size input"))
+    
+
+
+
+
+
+
+
+
+
+
