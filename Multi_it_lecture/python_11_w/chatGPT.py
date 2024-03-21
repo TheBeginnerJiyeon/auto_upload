@@ -170,6 +170,7 @@ print(a,type(a))
 import re
 # re: regular expression 정규표현식
 
+# join 함수
 homepage="drwill.co.kr"
 b=re.split(r'\.', homepage)[-2:]
 #  정규 표현식(re)의 split() 함수 사용
@@ -181,4 +182,103 @@ print(result)
 part="abcdefbbbb".split("b",maxsplit=1)
 print(part)
 # 최대한 1번만 분리하라 >> 리스트로 변환
+
+# for loop
+
+""" for 반복문은 주로 시퀀스(리스트, 튜플, 문자열) 항목들을 순화하거나, 특정 횟수 동안 반복 작업 수행할 때 사용됨 """
+""" 
+for 변수 in 리스트(튜플, 문자열):
+    수행 문장
+    수행 문장 """
+
+fruits=['사과','베','감','귤']
+
+for fruit in fruits:
+    print(fruit)
+
+print('-'*20)
+
+""" # while loop
+while 반복문은 주어진 조건이 True일 때만 코드 블록을 계속 실행한다
+조건이 False가 되면 반복이 종료됨
+
+while 조건문:
+    수행할 문장1
+    수행할 문장2
+    수행할 문장3 """
+
+count=1
+while count<6:
+    print(count)
+    count+=1
+
+print("*"*20)
+# 반복문 + 조건문
+
+""" total=0
+while True:
+    num=int(input("input number!(exit when input num is 0)"))
+    if num==0:
+        break
+    total+=num
+
+print("total: ",total) """
+
+
+#
+
+number=1
+
+while number<=100:
+    if number%3==0:
+        print(number)    
+    number+=1
+
+""" # 커피 자판기 만들기
+    
+choice=input("커피 자판기를 사용하시겠습니까?(yes/no)\n")
+# \n: new line 한 줄 띄어서 출력, "" 안에 있어야 함!!
+
+if choice=='yes':
+    while True:
+        money=int(input("돈 넣어주세요(숫자로 입력 예: 1000, 10000)\n"))
+        number=int(input("숫자를 선택해 주세요. 1번 아이스 아메리카노 2번 라떼 3번 콜드브루\n"))
+
+        if number==1:
+            print(f"you chose ice americano, the change is {money-1000} won.")
+        elif number==2:
+            print(f"you chose latte, the change is {money-1500} won.")
+        elif number==3:
+            print(f"you chose cold brew, the change is {money-1000} won.")
+        else:
+            print("없는 메뉴입니다")
+            break
+
+        another=input("wanna more? y/n")
+        if another=="y":
+            continue
+        elif another=="n":
+            break
+        else:
+            print("없는 메뉴입니다")
+            break
+ """
+
+# 함수
+
+def make_apple_juice(apple):
+    return "사과주스"
+
+print(make_apple_juice("apple"))
+
+
+# 매개변수 
+def addition(a,b):
+    return a+b
+
+result=addition(1,3)
+print(result)
+
+
+
 
